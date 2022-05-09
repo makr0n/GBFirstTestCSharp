@@ -1,5 +1,8 @@
 ﻿//Вводим массив строк
-string[] arrayInput = new string[] { "hello", "2", ":-)", "3", "try" };
+
+Console.Write("Введите текст через пробел и нажмите Enter: ");
+string inputText = Convert.ToString(Console.ReadLine()); // ввод текста пользователем
+string[] arrayInput = inputText.Split(' '); // создаем массив из введенного текста
 
 
 string[] GetArrayWithThreeSymbolsStrings(string[] array)
