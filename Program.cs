@@ -46,10 +46,12 @@ void PrintArray(string[] array)
     Console.WriteLine("]");
 }
 
-
+Console.Write("Исходный массив: ");
 PrintArray(arrayInput);
+Console.WriteLine("--------------------------");
+
 string[] newArray = GetArrayWithThreeSymbolsStrings(arrayInput);
+Console.Write("Полученный массив: ");
 PrintArray(newArray);
-Console.WriteLine();
 
 
