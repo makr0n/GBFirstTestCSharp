@@ -28,3 +28,28 @@ string[] GetArrrayWithThreeSymbolsStrings(string[] array)
     return threeSymbolsArray;
 }
 
+void PrintArray(string[] array)
+{
+    int count = array.Length;
+    Console.Write("[");
+    for (int i = 0; i < count; i++)
+    {
+        if (i < count - 1)
+        {
+            Console.Write($"{array[i]}, ");
+        }
+        else
+        {
+            Console.Write($"{array[i]}");
+        }
+    }
+    Console.WriteLine("]");
+}
+
+
+PrintArray(arrayInput);
+string[] newArray = GetArrrayWithThreeSymbolsStrings(arrayInput);
+PrintArray(newArray);
+Console.WriteLine();
+
+
