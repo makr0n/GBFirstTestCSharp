@@ -2,14 +2,14 @@
 string[] arrayInput = new string[] { "hello", "2", ":-)", "3", "try" };
 
 
-string[] GetArrrayWithThreeSymbolsStrings(string[] array)
+string[] GetArrayWithThreeSymbolsStrings(string[] array)
 {
     int wordCount = 0;
     for (int i = 0; i < array.Length; i++) // цикл для нахождения количества слов, удовлетворяющих условию задачи
     {
         if (array[i].Length <= 3)
         {
-            wordCount = wordCount + 1;
+            wordCount++;
         }
     }
 
@@ -21,7 +21,7 @@ string[] GetArrrayWithThreeSymbolsStrings(string[] array)
         if (array[i].Length <= 3)
         {
             threeSymbolsArray[count] = array[i];
-            count = count + 1;
+            count++;
         }
     }
 
@@ -48,7 +48,7 @@ void PrintArray(string[] array)
 
 
 PrintArray(arrayInput);
-string[] newArray = GetArrrayWithThreeSymbolsStrings(arrayInput);
+string[] newArray = GetArrayWithThreeSymbolsStrings(arrayInput);
 PrintArray(newArray);
 Console.WriteLine();
 
